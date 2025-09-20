@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Chivo:ital,wght@0,100..900;1,100..900&family=Great+Vibes&display=swap');
+
+@import "tailwindcss";
+
+@import './_colors.css';
+@import './_typography.css';
+@import './_reset.css';
+
+@import './notifications.css';
+@import './buttonsAndLinks.css';
+
+
+:root{
+    --general-border-radius: 1.6rem;
+    --general-padding-site: 12.8rem;
+    --nav-mobile-height: 10vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#root{
+    height: 100%;
+}
+
+.icon{
+    --size: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff3;
+    border-radius: 100%;
+
+    width: var(--size);
+    height: var(--size);
+
+    backdrop-filter: blur(1rem);
+}
